@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1678105555 source:c:\users\student\desktop\dzialo_newtona\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+
+1679044296 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\dzialo_newtona\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1679044417 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\dzialo_newtona\test.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<iostream>
+
+1686568942 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\dzialo_newtona\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
