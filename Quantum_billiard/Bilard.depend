@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1685360084 source:c:\users\student\desktop\bilard\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<cstdio>
+	<cstdlib>
+	<math.h>
+
+1686865152 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\bilard\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<cstdio>
+	<cstdlib>
+	<math.h>
+
