@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1702379265 source:c:\users\student\desktop\lancuch\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+
+1703609687 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\lancuch\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+
+1703609687 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\projectc\lancuch\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<time.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+
