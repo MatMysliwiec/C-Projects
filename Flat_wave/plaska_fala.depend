@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1686872000 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\plaska_fala\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1686868400 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\projectc\plaska_fala\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
