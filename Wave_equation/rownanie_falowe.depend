@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1682331725 source:c:\users\student\desktop\rownanie_falowe\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1686870097 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\rownanie_falowe\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
