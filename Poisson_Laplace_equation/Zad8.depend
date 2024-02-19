@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1686824465 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\zad8\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
