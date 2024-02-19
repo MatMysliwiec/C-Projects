@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1686868632 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\rownanie_dyfuzji (1)\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+
