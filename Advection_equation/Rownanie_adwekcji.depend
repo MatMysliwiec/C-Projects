@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1687463750 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\rownanie_adwekcji\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<math.h>
+	<cstdlib>
+	<cstdio>
+
