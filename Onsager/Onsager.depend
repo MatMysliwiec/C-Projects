@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1701165102 source:d:\studenci\mmys\onsager\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cmath>
+
