@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1686780761 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\studia\ft ii stopieñ\symulacje komputerowe\pole_em\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<stdio.h>
+	<stdlib.h>
+
+1708355282 source:c:\users\user\onedrive - politechnika krakowska im. tadeusza koœciuszki\pulpit\projectc\pole_em\main.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<stdio.h>
+	<stdlib.h>
+
