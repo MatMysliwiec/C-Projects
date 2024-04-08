@@ -105,8 +105,8 @@ $$V=\pi(U_1-\frac{1}{2})$$
 
 $$W=-log(U_2)$$
 
-$$X=\left\{\begin{matrix}
-\frac{sin(\alpha V)}{cos(V)^(1/\alpha)}[\frac{cos((\alpha-1)V)}{W}]^{\frac{1-\alpha}{\alpha}},\alpha \neq 1\\ 
+$$\left\{\begin{matrix}
+X = \frac{sin(\alpha V)}{cos(V)^(1/\alpha)}[\frac{cos((\alpha-1)V)}{W}]^{\frac{1-\alpha}{\alpha}},\alpha \neq 1\\ 
 tan(V), \alpha = 1
 \end{matrix}\right$$
 
@@ -123,6 +123,18 @@ The Limit Diffusion Aggregation (DLA) method is a model that has been introduced
 
 The aim of the project was to write a programme to visualise the deposition of molecules in square geometry using the DLA method for a square lattice, with the initial molecule placed in the centre of the lattice. 
 ## Lennard-Jones potential
+The Lennard-Jones potential is a mathematical function that describes the interaction between two almost all atoms or molecules that have no electrical charge. It is one of the most important models in chemistry and molecular physics and is used to describe interactions between atoms and molecules in liquids, gases and solids.
+
+This potential has the form:
+
+$$V(r) = 4◦silon [(\sigma/r)^{12} - (\sigma/r)^6]$$
+
+where $r$ is the distance between atoms, $\sigma$ is the distance for which the potential energy is zero, and $epsilon$ is the depth of the potential well, i.e. the maximum negative potential between atoms.
+
+The first term of the potential, $(\sigma/r)^{12}$, describes the electrostatic repulsion between atoms, resulting from the fact that the electrons in the atoms are negatively charged and repel each other. The second term, $(\sigma/r)^6$, describes the van der Waals attraction between atoms, resulting from the presence of electric dipoles in atoms. The Lennard-Jones potential has many applications in modelling the behaviour of liquids, gases and solids, including in numerical simulations such as the LAMMPS programme. Its parameters ($sigma$ and $epsilon$) can be adjusted for specific cases, allowing for more precise results. In our case, we used it to illustrate the breaking of a layer of atoms, where the interactions between them were described by this very potential.
+
+The aim of the project was to write a programme that will visualise the simulation of a one-dimensional Lennard-Jones particle system. There will be 2 immobile Lennard-Jones particles between the walls. For different energies I
+particle densities we will determine the density profiles between the walls and determine the temperature from the Boltzmann equipartition principle.
 
 ## Lotka-Volterra equation
 
@@ -218,18 +230,43 @@ $$S=\int_0^{2\pi}\cos{2\theta}f(\theta)d\theta$$
 The aim of the project was to plot the dependence of the order parameter on the density of the system $S=(0,0.1,0.2,0.3,...,10)$.
 ## Poisson-Laplace equation
 The Laplace equation is a second-degree partial differential equation that occurs in the context of harmonic functions. It can be used to describe many physical phenomena, such as the distribution of temperature, electrical potential or the distribution of gravitational potential. In the two-dimensional case, Laplace's equation takes the form:
+
 $$\Delta U = 0$$
-Poisson's equation is an extension of Laplace's equation and takes into account the presence of sources in the field. It can be used in cases where there is a source or an outflow of some type of substance, such as electric charges, masses or heat. In the two-dimensional case, the Poisson equation takes the form:
+
+Poisson's equation is an extension of Laplace's equation and takes into account the presence of sources in the field. It can be used in cases where there is a source or an outflow of some type of substance, such as electric charges, masses or heat. In 
+the two-dimensional case, the Poisson equation takes the form:
+
 $$\Delta U = -\frac{\rho}{\epsilon}$$
+
 where $\rho$ is the source density and $\epsilon$ is the dielectric permeability.
 
 The aim of the project was to investigate the problem for selected initial and boundary conditions, assuming several point sources.
 
 ## Pseudorandom number generator 
+Pseudo-random number generators work by deterministically calculating a sequence of numbers that look like random numbers. Based on an initial value called a seed, it calculates subsequent values. The software generation of random numbers is often based on recursion. The sequences of pseudorandom numbers are deterministic. The problem is to generate numbers whose properties very closely resemble the main properties of true random numbers. 
+Simple Oakenfull generators:
+
+$$x_i=(3432 x_{i-1}+6789)mod(9973)$$
+$$x_i=(16333x_{i-1}+25887)mod(32768)$$
+
+On 32-bit computers, common values are m=2^32 and a=65539, 1099087573, 2396548189, 3934873077, 2304580733. 
+The rand() function is used to draw pseudo-random numbers, it returns an integer (int) between 0 and the constant RAND_MAX. RAND_MAX is a constant declared in the header file <stdlib.h> it is at least 32767 (it is a constant which depends on your compiler and libraries).
+
+The aim od the project was to compare the pseudo-random number generators mentioned above.
 
 ## Quantum billard
+Quantum billiards is a theoretical physical model that studies the movement of particles in an environment of bouncing boundaries. It is analogous to traditional billiards, in which balls move on a table and bounce off the walls. However, in quantum billiards, instead of balls, quantum particles such as electrons or photons are used and the table is a space with defined boundaries. In quantum billiards, the motion of the particles is described by the Schr ̈odinger equation, which is the fundamental equation of quantum mechanics. Quantum particles can exist in superposition states, meaning that they can be in different places at the same time. When a particle hits the boundary of a quantum billiard, a quantum reflection phenomenon occurs, which is described by the probability of the particle penetrating the boundary. The behaviour of the wave function was simulated using a cellular automaton:
 
+$$\psi_C(t+\Delta t)=\frac{1}{2}[\psi_N(t)+\psi_S(t)+\psi_E(t)+\psi_W(t)-w\psi_C(t)]$$
+
+The solution at a node (index C - centre) at the next time instant depends on the solution at the same
+node at time t and the solutions at its four neighbours (north N, south S, east E and west W) at time t.
 ## Scattering
+The aim of the exercise is to visualise the scattering of particles at a potential:
+
+$$U(x,y)=Ax^2y^2e^{-x^2-y^2}$$
+
+Examine histograms of scattering angles for different initial particle packets (with different initial parameters and blurs). A particle packet is sent from the edge of the window into the potential field $x0=-10.0,y0=0.0$, with an initial velocity $v0=0.5$ and a random initial angle based on a random constant $u$, $kat0=0.05+0.1*u$.\
 
 ## Wave equation
 Wave equations are a type of partial differential equations that describe the propagation of waves in space and time. They apply to different types of waves, such as sound waves, electromagnetic waves, seismic waves or mechanical waves. In general, these equations describe the changes in the value of a certain quantity (e.g. pressure, electric field, strain) as a function of time and position in space. Wave equations are usually in the form of second-order differential equations, which take into account the second time and spatial derivatives of the quantity under study.
