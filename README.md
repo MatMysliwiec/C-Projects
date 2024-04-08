@@ -53,8 +53,6 @@ The Random Sequential Adsorption (RSA) method was first used to describe the ads
 which is a simplification to facilitate mathematical analysis. The method makes it possible to determine the maximum random coverage of surfaces by adsorbate objects (for example, proteins) and the kinetics of their deposition. The RSA method makes it possible to determine what maximum surface coverage can be achieved under conditions of random adsorption of molecules. A limitation of the model is that it only predicts that at most a monolayer of molecules can be deposited, reflecting a situation where molecules adsorb onto a surface in a single layer.
 The aim of the project was to write a programme showing the adsorption of fibrinogen molecules, made up of beads:
 
-
-
 The small spheres have a diameter of 1.5nm, the middle one 5.3nm and the outer ones 6.7nm. Investigate the coverage of the substrate with fibrinogen molecules by fitting a Feder curve $\theta(\infty)-\theta(t)\sim t^{-1/d}$ to a plot of coverage against time, where $\theta(\infty)$ is the coverage of the maximum area, $\theta(t)$ is the coverage at time $t$ and $d$ is the number of degrees of freedom of the deposited objects. 
 
 Coverage:
@@ -120,9 +118,26 @@ The aim of the project was to write a programme to visualise the movement of a f
 
 ## Fractal
 
+The Limit Diffusion Aggregation (DLA) method is a model that has been introduced as a way to model aggregation processes in physics and other fields. The process consists of: placing a single particle at an initial point in the coordinate system. This molecule is usually considered the seed from which the aggregation process starts. Subsequent particles are added by random wandering. They start their movement from a random point in space. Each particle moves randomly, choosing its route at random. If a new molecule encounters a previously formed aggregate (also known as a cluster), it joins it. This phenomenon simulates the process of aggregation, where new molecules join existing ones. This process is repeated, adding more molecules that move randomly, joining the aggregate when they encounter it. This process results in structures that often exhibit fractal properties. These structures are highly complex and full of detail at different scales. It is used to simulate the formation of structures such as dendrites in crystallisation, plant growth patterns, or structures in chemical reactions. This technique is also used in computer graphics to generate fractals and nature-like structures.
+
+
+The aim of the project was to write a programme to visualise the deposition of molecules in square geometry using the DLA method for a square lattice, with the initial molecule placed in the centre of the lattice. 
 ## Lennard-Jones potential
 
 ## Lotka-Volterra equation
+
+The Lotka-Volterra equation - a non-linear system of first-degree differential equations. The following model was proposed in 1926 by Vito Volterra to describe fish populations caught in the Adriatic Sea. Independently of Volterra, equivalent equations to describe the oscillation of substance concentrations in a hypothetical chemical reaction were obtained by Alfred James Lotka in 1920. The Lotka-Volterra equation is a model for dynamic systems occurring in ecosystems, e.g. in simulating the behaviour of prey and predator populations.
+
+$$\begin{matrix}
+\frac{dx}{dt} = (a-by)x\\ 
+\frac{dy}{dt} = (cx-d)y
+\end{matrix}$$
+
+a - prey birth rate or prey growth rate, 
+c - birth rate of predators or growth rate of predators, 
+d - predator death rate or predator attrition rate, 
+b - prey death rate due to predation. 
+The main drawback of the basic Lotka-Volterra model is that with a zero predator population prey abundance increases indefinitely.
 
 ## Isigna model
 The Ising model is a mathematical physical model that was proposed by physicist Ernst Ising in 1925. The model is used in statistical physics to study the magnetic properties of substances and to analyse phase transitions in physical systems. The main purpose of the Ising model is to describe magnetism in solids by taking into account the interactions between the spins of atoms or magnetic dipole moments. The model is a simple but important tool for understanding the collective behaviour of spins in magnetic bodies. In the Ising model, each atom or molecule in a solid has a spin that can take on one of two values: 'up'or 'down', which corresponds to the direction of magnetism. The atoms are arranged on a regular lattice and neighbouring spins interact with each other, leading to magnetic properties.
@@ -151,8 +166,21 @@ $$C=\frac{1}{T^2}[<E^2>-<E>^2]$$
 The aim of the project was to solve the Isigna model problem in 2D, determining the temperature dependence of the mean magnetisation and energy, and to draw the magnetic susceptibility and specific heat from temperature.
 
 ## XY model
+The XY model, also known as the Heisenberg XY model, is one of the key models in statistical physics, particularly in the context of the theory of magnetism. The interactions between spins in magnetic systems are analysed within the framework of this model, which has found application mainly in the study of ferromagnets. The Hamiltonian is given by the equation:
+
+$$H=-J\sum_{<i,j>}s_i*s_j=-J\sum_{<i,j>}\cos{\theta_i-\theta_j}$$
+
+Where the sum runs over all pairs of nearest spins of S, while J is the coupling constant.
+Model with external field:
+
+$$H(s)=-\sum_{i\neq j}J_{ij} s_i * s_j - \sum_j h_j*s_j=-\sum_{i\neq j}J_{ij}\cos{\theta_i-\theta_j}-\sum_j h_j \cos{\theta_j}$$
+
+The XY model is often used to analyse phase transitions, particularly the Curie transition, which represents the loss of global magnetisation as temperature increases. This model is characterised by continuous symmetry, meaning that changes in the spin angle value are continuous, which differs from models that describe spins as vectors with finite directions.
+
+The aim of the project was to solve the XY model, determining the average magnetisation and energy from temperature, and the magnetic susceptibility and specific heat from temperature. 
 
 ## Needles
+The aim of the project was to write a programme in which two random sections are visualised. Generate a random configuration of non-overlapping sections with a given density $\rho = N/(L∗L)$.
 
 ## Newton cannon
 Newton's cannon is a thought experiment created by Isaac Newton to explain the orbital motion of the moon. Basically, why the moon does not fall to Earth if it feels the acceleration caused by gravity. Also why the moon, which moves with constant speed and constant direction and does not feel any external force, does not move in a straight line but in a circle. To clarify these issues, Newton carried out an experiment in which a cannon was placed on a high mountain top and a projectile was fired horizontally. After comparing two formulae for the distance a cannonball will travel horizontally and vertically, it can be seen that the horizontal distance ($d_x=\vec{v} \times t$) depends on its velocity. Newton then realised that if he chose the right velocity, the trajectory of the cannonball would curve to exactly the same extent as the curvature of the Earth, so the cannonball would always remain at the same height above the ground. By doing so, he balanced the inertia of the cannonball, which makes it want to continue its journey in a straight line, and therefore away from the Earth, with the acceleration caused by the Earth's gravity. As a result, the cannonball orbits the Earth, always accelerating towards it but never approaching it. Ultimately, Newton concluded that the speed of the cannonball is related to the acceleration due to the Earth's gravity ($\vec{a}$) and the radius of the orbit ($\vec{r}$ - measured from the centre of the orbit; i.e. the centre of the Earth) as follows:
@@ -167,7 +195,27 @@ Representation of orbits after changes in the value of V , assuming G = M = R = 
 $$r(t)=\frac{R^2V^2}{GM+\sqrt{G^2M^2+R^2V^2(-\frac{2GM}{R}+V^2)}~cos(\varphi (t) - \varphi_0)}.$$
 
 ## Onsager model
+Lars Onsager studied the special case in which molecules are elongated and interact with each other via an intermolecular potential V(1,2), which depends on the position and orientation of the molecules labelled ,,1" and ,,2". His work in this area was primarily concerned with the theory of liquid crystalline systems. For such a system, Onsager developed a formalism based on chemical and external potentials, which allowed him to describe the Helmholtz free energy F for such a system.
 
+$$\beta F=\int \rho(1)[log(\rho(1)\Lambda^3)-1-\beta \mu+\beta U(1)]d(1)-\frac{1}{2}\int f(1,2)\rho(1)\rho(2)d(2)d(1)$$
+
+where: $\beta=\frac{1}{kT}$,$\Lambda$ is the de Broglie thermal wavelength, $mu$ is the chemical potential, U is the external potential and f(1,2) is the Meyer function:
+
+$$f(1,2)=e^{-\frac{V(1,2)}{kT}}-1$$
+
+By introducing temperature-dependent expansion coefficients, Onsager was able to derive detailed equations describing the thermodynamic properties of crystalline liquids. The free energy per molecule is equal to:
+
+$$\frac{\beta F}{N}=\frac{\beta F_0}{N}+\int f(\theta_1)[log(df(\theta_1)-1-\beta \mu)]d\theta_1+\frac{d}{2}\int V_{excl}(\theta_1,\theta_2)f(\theta_1)f(\theta_2)d\theta_1 d\theta_2$$
+
+where $V_{excl}$ is the excluded volume of two needles oriented at angles $theta_1$ and $theta_2$ are the orientations of the molecules, $f(\theta)$ is the probability density of finding a molecule at angle q, $mu$ the chemical potential, and d is the density of molecules per unit area. We calculate the distribution profile of the angles of the molecules by minimising the free energy. Hence:
+
+$$log[f(\theta_1)]=-d\int V_{excl}(\theta_1,\theta_2)f(\theta_2)d\theta_2-log(d)-\beta \mu$$
+
+We can designate the order parameter as:
+
+$$S=\int_0^{2\pi}\cos{2\theta}f(\theta)d\theta$$
+
+The aim of the project was to plot the dependence of the order parameter on the density of the system $S=(0,0.1,0.2,0.3,...,10)$.
 ## Poisson-Laplace equation
 The Laplace equation is a second-degree partial differential equation that occurs in the context of harmonic functions. It can be used to describe many physical phenomena, such as the distribution of temperature, electrical potential or the distribution of gravitational potential. In the two-dimensional case, Laplace's equation takes the form:
 $$\Delta U = 0$$
